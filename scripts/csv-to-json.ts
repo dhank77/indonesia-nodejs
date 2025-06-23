@@ -3,10 +3,10 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 const files = [
-    { csvFile: 'data/provinces.csv', jsonFile: 'src/provinces.json' },
-    { csvFile: 'data/cities.csv', jsonFile: 'src/cities.json' },
-    { csvFile: 'data/districts.csv', jsonFile: 'src/districts.json' },
-    { csvFile: 'data/villages.csv', jsonFile: 'src/villages.json' },
+    { csvFile: 'data/csv/provinces.csv', jsonFile: 'data/json/provinces.json' },
+    { csvFile: 'data/csv/cities.csv', jsonFile: 'data/json/cities.json' },
+    { csvFile: 'data/csv/districts.csv', jsonFile: 'data/json/districts.json' },
+    { csvFile: 'data/csv/villages.csv', jsonFile: 'data/json/villages.json' },
 ];
 
 async function convertCSVtoJSON() {

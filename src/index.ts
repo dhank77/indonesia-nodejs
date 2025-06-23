@@ -1,7 +1,7 @@
-import provinces from './provinces.json';
-import cities from './cities.json';
-import districts from './districts.json';
-import villages from './villages.json';
+import provinces from '../data/json/provinces.json';
+import cities from '../data/json/cities.json';
+import districts from '../data/json/districts.json';
+import villages from '../data/json/villages.json';
 
 export function getProvinces() {
     return provinces;

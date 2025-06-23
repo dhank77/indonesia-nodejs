@@ -4,6 +4,9 @@
         "resolveJsonModule": true,
         "module": "commonjs", 
         "moduleResolution": "node",
-        "strict": true
-    }
+        "strict": true,
+        "outDir": "dist",
+        "rootDir": "src"
+    },
+    "include": ["src"]
 }

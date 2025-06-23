@@ -11,7 +11,7 @@ export interface City {
 
 export interface District {
     code: string;
-    City_code: string;
+    city_code: string;
     name: string;
 }
 

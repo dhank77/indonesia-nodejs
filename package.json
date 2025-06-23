@@ -1,0 +1,23 @@
+{
+    "name": "indonesia-nodejs",
+    "version": "1.0.0",
+    "description": "Data Wilayah Indonesia terbaru berdasarkan Kepmendagri tahun 2025 - Provinsi, Kabupaten, Kecamatan, Desa",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "convert": "ts-node scripts/csv-to-json.ts"
+    },
+    "keywords": ["indonesia", "data", "wilayah", "provinsi", "kabupaten", "kecamatan", "desa"],
+    "author": "M. Hamdani Ilham Latjoro",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dhank77/indonesia-nodejs"
+    },
+    "devDependencies": {
+        "csvtojson": "^2.0.10",
+        "ts-node": "^10.0.0",
+        "typescript": "^5.0.0"
+    }
+}

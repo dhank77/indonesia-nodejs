@@ -28,4 +28,4 @@ export {
     getVillagesOfDistrictName
 } from './villages';
 
-export type { Province, City, District, Village } from './types';
+export type { Province, City, District, Village } from '../types';

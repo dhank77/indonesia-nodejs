@@ -1,26 +1,25 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getProvinces = getProvinces;
-exports.getCities = getCities;
-exports.getDistricts = getDistricts;
-exports.getVillages = getVillages;
-var provinces_json_1 = __importDefault(require("../data/json/provinces.json"));
-var cities_json_1 = __importDefault(require("../data/json/cities.json"));
-var districts_json_1 = __importDefault(require("../data/json/districts.json"));
-var villages_json_1 = __importDefault(require("../data/json/villages.json"));
-function getProvinces() {
-    return provinces_json_1.default;
-}
-function getCities(provinceCode) {
-    return cities_json_1.default.filter(function (item) { return item.province_code === provinceCode; });
-}
-function getDistricts(regencyCode) {
-    return districts_json_1.default.filter(function (item) { return item.city_code === regencyCode; });
-}
-function getVillages(districtCode) {
-    console.log(villages_json_1.default);
-    // return villages.filter((item: { district_code: string; }) => item.district_code === districtCode);
-}
+exports.getVillagesOfDistrictName = exports.getVillagesOfDistrictCode = exports.getVillageByName = exports.getVillageById = exports.getAllVillages = exports.getDistrictsOfCityName = exports.getDistrictsOfCityCode = exports.getDistrictByName = exports.getDistrictById = exports.getAllDistricts = exports.getRegenciesOfProvinceName = exports.getRegenciesOfProvinceCode = exports.getCityByName = exports.getCityById = exports.getAllRegencies = exports.getProvinceByName = exports.getProvinceById = exports.getAllProvinces = void 0;
+var provinces_1 = require("./provinces");
+Object.defineProperty(exports, "getAllProvinces", { enumerable: true, get: function () { return provinces_1.getAllProvinces; } });
+Object.defineProperty(exports, "getProvinceById", { enumerable: true, get: function () { return provinces_1.getProvinceById; } });
+Object.defineProperty(exports, "getProvinceByName", { enumerable: true, get: function () { return provinces_1.getProvinceByName; } });
+var cities_1 = require("./cities");
+Object.defineProperty(exports, "getAllRegencies", { enumerable: true, get: function () { return cities_1.getAllRegencies; } });
+Object.defineProperty(exports, "getCityById", { enumerable: true, get: function () { return cities_1.getCityById; } });
+Object.defineProperty(exports, "getCityByName", { enumerable: true, get: function () { return cities_1.getCityByName; } });
+Object.defineProperty(exports, "getRegenciesOfProvinceCode", { enumerable: true, get: function () { return cities_1.getRegenciesOfProvinceCode; } });
+Object.defineProperty(exports, "getRegenciesOfProvinceName", { enumerable: true, get: function () { return cities_1.getRegenciesOfProvinceName; } });
+var districts_1 = require("./districts");
+Object.defineProperty(exports, "getAllDistricts", { enumerable: true, get: function () { return districts_1.getAllDistricts; } });
+Object.defineProperty(exports, "getDistrictById", { enumerable: true, get: function () { return districts_1.getDistrictById; } });
+Object.defineProperty(exports, "getDistrictByName", { enumerable: true, get: function () { return districts_1.getDistrictByName; } });
+Object.defineProperty(exports, "getDistrictsOfCityCode", { enumerable: true, get: function () { return districts_1.getDistrictsOfCityCode; } });
+Object.defineProperty(exports, "getDistrictsOfCityName", { enumerable: true, get: function () { return districts_1.getDistrictsOfCityName; } });
+var villages_1 = require("./villages");
+Object.defineProperty(exports, "getAllVillages", { enumerable: true, get: function () { return villages_1.getAllVillages; } });
+Object.defineProperty(exports, "getVillageById", { enumerable: true, get: function () { return villages_1.getVillageById; } });
+Object.defineProperty(exports, "getVillageByName", { enumerable: true, get: function () { return villages_1.getVillageByName; } });
+Object.defineProperty(exports, "getVillagesOfDistrictCode", { enumerable: true, get: function () { return villages_1.getVillagesOfDistrictCode; } });
+Object.defineProperty(exports, "getVillagesOfDistrictName", { enumerable: true, get: function () { return villages_1.getVillagesOfDistrictName; } });

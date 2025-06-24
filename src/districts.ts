@@ -1,17 +1,25 @@
 import districts from '../data/json/districts.json';
 import cities from '../data/json/cities.json';
-import { District } from './types';
+import { District } from '../types';
 
 export async function getAllDistricts(): Promise<District[]> {
-    return districts as District[];
+    return districts.map((item: any) => ({
+        code: parseInt(item.code),
+        city_code: parseInt(item.city_code),
+        name: item.name
+    }));
 }
 
-export async function getDistrictById(code: string): Promise<District> {
-    const district = districts.find((item: any) => item.code === code);
+export async function getDistrictById(code: number): Promise<District> {
+    const district = districts.find((item: any) => parseInt(item.code) === code);
     if (!district) {
         throw new Error(`District with code ${code} not found`);
     }
-    return district as District;
+    return {
+        code: parseInt(district.code),
+        city_code: parseInt(district.city_code),
+        name: district.name
+    };
 }
 
 export async function getDistrictByName(name: string): Promise<District> {
@@ -19,11 +27,19 @@ export async function getDistrictByName(name: string): Promise<District> {
     if (!district) {
         throw new Error(`District with name ${name} not found`);
     }
-    return district as District;
+    return {
+        code: parseInt(district.code),
+        city_code: parseInt(district.city_code),
+        name: district.name
+    };
 }
 
-export async function getDistrictsOfCityCode(cityCode: string): Promise<District[]> {
-    return districts.filter((item: any) => item.city_code === cityCode) as District[];
+export async function getDistrictsOfCityCode(cityCode: number): Promise<District[]> {
+    return districts.filter((item: any) => parseInt(item.city_code) === cityCode).map((item: any) => ({
+        code: parseInt(item.code),
+        city_code: parseInt(item.city_code),
+        name: item.name
+    }));
 }
 
 export async function getDistrictsOfCityName(cityName: string): Promise<District[]> {
@@ -31,5 +47,9 @@ export async function getDistrictsOfCityName(cityName: string): Promise<District
     if (!city) {
         throw new Error(`City with name ${cityName} not found`);
     }
-    return districts.filter((item: any) => item.city_code === (city as any).code) as District[];
+    return districts.filter((item: any) => parseInt(item.city_code) === parseInt((city as any).code)).map((item: any) => ({
+        code: parseInt(item.code),
+        city_code: parseInt(item.city_code),
+        name: item.name
+    }));
 }

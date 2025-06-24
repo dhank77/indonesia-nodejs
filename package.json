@@ -4,6 +4,11 @@
    "description": "Data Wilayah Indonesia terbaru berdasarkan Kepmendagri tahun 2025 - Provinsi, Kabupaten, Kecamatan, Desa",
    "main": "dist/index.js",
    "types": "dist/index.d.ts",
+   "files": [
+      "dist",
+      "data/json",
+      "types"
+   ],
    "scripts": {
       "build": "tsc",
       "convert": "ts-node scripts/csv-to-json.ts"
@@ -27,9 +32,5 @@
       "csvtojson": "^2.0.10",
       "ts-node": "^10.0.0",
       "typescript": "^5.0.0"
-   },
-   "files": [
-      "dist",
-      "data"
-   ]
+   }
 }

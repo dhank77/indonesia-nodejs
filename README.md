@@ -2,7 +2,7 @@
 
 # 🇮🇩 Indonesia NodeJS
 
-[![npm version](https://img.shields.io/npm/v/indonesia-nodejs.svg?style=flat-square)](https://www.npmjs.org/package/indonesia-nodejs)
+[![npm version](https://img.shields.io/npm/v/indonesia-nodejs.svg?style=flat-square)](https://www.npmjs.com/package/indonesia-nodejs)
 [![install size](https://img.shields.io/bundlephobia/min/indonesia-nodejs?style=flat-square)](https://packagephobia.com/result?p=indonesia-nodejs)
 [![npm downloads](https://img.shields.io/npm/dm/indonesia-nodejs.svg?style=flat-square)](https://npm-stat.com/charts.html?package=indonesia-nodejs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)

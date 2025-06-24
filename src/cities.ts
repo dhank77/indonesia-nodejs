@@ -10,7 +10,7 @@ export async function getAllRegencies(): Promise<City[]> {
     }));
 }
 
-export async function getCityById(code: number): Promise<City> {
+export async function getCityByCode(code: number): Promise<City> {
     const city = cities.find((item: any) => parseInt(item.code) === code);
     if (!city) {
         throw new Error(`City with code ${code} not found`);

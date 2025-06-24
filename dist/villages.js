@@ -40,7 +40,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllVillages = getAllVillages;
-exports.getVillageById = getVillageById;
+exports.getVillageByCode = getVillageByCode;
 exports.getVillageByName = getVillageByName;
 exports.getVillagesOfDistrictCode = getVillagesOfDistrictCode;
 exports.getVillagesOfDistrictName = getVillagesOfDistrictName;
@@ -59,7 +59,7 @@ function getAllVillages() {
         });
     });
 }
-function getVillageById(code) {
+function getVillageByCode(code) {
     return __awaiter(this, void 0, void 0, function () {
         var village;
         return __generator(this, function (_a) {

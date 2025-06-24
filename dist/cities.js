@@ -40,7 +40,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllRegencies = getAllRegencies;
-exports.getCityById = getCityById;
+exports.getCityByCode = getCityByCode;
 exports.getCityByName = getCityByName;
 exports.getRegenciesOfProvinceCode = getRegenciesOfProvinceCode;
 exports.getRegenciesOfProvinceName = getRegenciesOfProvinceName;
@@ -57,7 +57,7 @@ function getAllRegencies() {
         });
     });
 }
-function getCityById(code) {
+function getCityByCode(code) {
     return __awaiter(this, void 0, void 0, function () {
         var city;
         return __generator(this, function (_a) {

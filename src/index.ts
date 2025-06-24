@@ -1,12 +1,12 @@
 export {
     getAllProvinces,
-    getProvinceById,
+    getProvinceByCode,
     getProvinceByName
 } from './provinces';
 
 export {
     getAllRegencies,
-    getCityById,
+    getCityByCode,
     getCityByName,
     getRegenciesOfProvinceCode,
     getRegenciesOfProvinceName
@@ -14,7 +14,7 @@ export {
 
 export {
     getAllDistricts,
-    getDistrictById,
+    getDistrictByCode,
     getDistrictByName,
     getDistrictsOfCityCode,
     getDistrictsOfCityName
@@ -22,7 +22,7 @@ export {
 
 export {
     getAllVillages,
-    getVillageById,
+    getVillageByCode,
     getVillageByName,
     getVillagesOfDistrictCode,
     getVillagesOfDistrictName

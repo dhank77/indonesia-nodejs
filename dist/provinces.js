@@ -40,7 +40,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllProvinces = getAllProvinces;
-exports.getProvinceById = getProvinceById;
+exports.getProvinceByCode = getProvinceByCode;
 exports.getProvinceByName = getProvinceByName;
 var provinces_json_1 = __importDefault(require("../data/json/provinces.json"));
 function getAllProvinces() {
@@ -53,7 +53,7 @@ function getAllProvinces() {
         });
     });
 }
-function getProvinceById(code) {
+function getProvinceByCode(code) {
     return __awaiter(this, void 0, void 0, function () {
         var province;
         return __generator(this, function (_a) {

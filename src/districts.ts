@@ -10,7 +10,7 @@ export async function getAllDistricts(): Promise<District[]> {
     }));
 }
 
-export async function getDistrictById(code: number): Promise<District> {
+export async function getDistrictByCode(code: number): Promise<District> {
     const district = districts.find((item: any) => parseInt(item.code) === code);
     if (!district) {
         throw new Error(`District with code ${code} not found`);

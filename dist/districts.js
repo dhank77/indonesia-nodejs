@@ -40,7 +40,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getAllDistricts = getAllDistricts;
-exports.getDistrictById = getDistrictById;
+exports.getDistrictByCode = getDistrictByCode;
 exports.getDistrictByName = getDistrictByName;
 exports.getDistrictsOfCityCode = getDistrictsOfCityCode;
 exports.getDistrictsOfCityName = getDistrictsOfCityName;
@@ -57,7 +57,7 @@ function getAllDistricts() {
         });
     });
 }
-function getDistrictById(code) {
+function getDistrictByCode(code) {
     return __awaiter(this, void 0, void 0, function () {
         var district;
         return __generator(this, function (_a) {

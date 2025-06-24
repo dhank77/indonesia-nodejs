@@ -13,7 +13,7 @@ export async function getAllVillages(): Promise<Village[]> {
     }));
 }
 
-export async function getVillageById(code: number): Promise<Village> {
+export async function getVillageByCode(code: number): Promise<Village> {
     const village = villages.find((item: any) => parseInt(item.code) === code);
     if (!village) {
         throw new Error(`Village with code ${code} not found`);

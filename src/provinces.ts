@@ -8,7 +8,7 @@ export async function getAllProvinces(): Promise<Province[]> {
     }));
 }
 
-export async function getProvinceById(code: number): Promise<Province> {
+export async function getProvinceByCode(code: number): Promise<Province> {
     const province = provinces.find((item: any) => parseInt(item.code) === code);
     if (!province) {
         throw new Error(`Province with code ${code} not found`);

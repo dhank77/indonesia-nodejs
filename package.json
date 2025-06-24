@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "Data Wilayah Indonesia terbaru berdasarkan Kepmendagri tahun 2025 - Provinsi, Kabupaten, Kecamatan, Desa",
    "main": "dist/index.js",
-   "types": "dist/index.d.ts",
+   "types": "types/index.d.ts",
    "files": [
       "dist",
       "data/json",

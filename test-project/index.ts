@@ -70,8 +70,8 @@ async function runTests() {
     console.log(`   Examples: ${regenciesOfProvince.slice(0, 3).map(r => r.name).join(', ')}`);
     
     // Get regencies of province name
-    const regenciesOfProvinceName = await getRegenciesOfProvinceName('Jakarta');
-    console.log(`✅ Regencies in 'Jakarta': ${regenciesOfProvinceName.length} cities`);
+    const regenciesOfProvinceName = await getRegenciesOfProvinceName('DKI Jakarta');
+    console.log(`✅ Regencies in 'DKI Jakarta': ${regenciesOfProvinceName.length} cities`);
     
     console.log('');
     

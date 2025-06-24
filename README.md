@@ -11,7 +11,7 @@
 
 **📍 Data Wilayah Indonesia Terlengkap & Terbaru**
 
-*Berdasarkan Kepmendagri tahun 2025 - Provinsi, Kabupaten/Kota, Kecamatan, dan Desa/Kelurahan*
+*Data terbaru 2025 sesuai kemendagri No. 300.2.2-2138 Tahun 2025, data daerah-daerah di Indonesia termasuk 38 provinsi, kabupaten/kota, kecamatan, dan desa/kelurahan*
 
 **🚀 Fast • 🔒 Type-Safe • 📦 Zero Dependencies • ✅ Fully Tested**
 

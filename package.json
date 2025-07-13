@@ -1,6 +1,6 @@
 {
    "name": "indonesia-nodejs",
-   "version": "1.0.8",
+   "version": "1.1.0",
    "description": "Data Wilayah Indonesia terbaru berdasarkan Kepmendagri tahun 2025 - Provinsi, Kabupaten, Kecamatan, Desa",
    "main": "dist/index.js",
    "types": "types/index.d.ts",

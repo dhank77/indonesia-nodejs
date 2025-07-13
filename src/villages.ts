@@ -9,7 +9,8 @@ export async function getAllVillages(): Promise<Village[]> {
     return villages.map((item: any) => ({
         code: parseInt(item.code),
         district_code: parseInt(item.district_code),
-        name: item.name
+        name: item.name,
+        postal_code: parseInt(item.postal_code)
     }));
 }
 
@@ -21,7 +22,8 @@ export async function getVillageByCode(code: number): Promise<Village> {
     return {
         code: parseInt(village.code),
         district_code: parseInt(village.district_code),
-        name: village.name
+        name: village.name,
+        postal_code: parseInt(village.postal_code)
     };
 }
 
@@ -33,7 +35,8 @@ export async function getVillageByName(name: string): Promise<Village> {
     return {
         code: parseInt(village.code),
         district_code: parseInt(village.district_code),
-        name: village.name
+        name: village.name,
+        postal_code: parseInt(village.postal_code)
     };
 }
 
@@ -41,7 +44,8 @@ export async function getVillagesOfDistrictCode(districtCode: number): Promise<V
     return villages.filter((item: any) => parseInt(item.district_code) === districtCode).map((item: any) => ({
         code: parseInt(item.code),
         district_code: parseInt(item.district_code),
-        name: item.name
+        name: item.name,
+        postal_code: parseInt(item.postal_code)
     }));
 }
 
@@ -53,6 +57,7 @@ export async function getVillagesOfDistrictName(districtName: string): Promise<V
     return villages.filter((item: any) => parseInt(item.district_code) === parseInt((district as any).code)).map((item: any) => ({
         code: parseInt(item.code),
         district_code: parseInt(item.district_code),
-        name: item.name
+        name: item.name,
+        postal_code: parseInt(item.postal_code)
     }));
 }

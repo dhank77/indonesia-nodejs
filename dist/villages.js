@@ -54,7 +54,8 @@ function getAllVillages() {
             return [2 /*return*/, villages.map(function (item) { return ({
                     code: parseInt(item.code),
                     district_code: parseInt(item.district_code),
-                    name: item.name
+                    name: item.name,
+                    postal_code: parseInt(item.postal_code)
                 }); })];
         });
     });
@@ -70,7 +71,8 @@ function getVillageByCode(code) {
             return [2 /*return*/, {
                     code: parseInt(village.code),
                     district_code: parseInt(village.district_code),
-                    name: village.name
+                    name: village.name,
+                    postal_code: parseInt(village.postal_code)
                 }];
         });
     });
@@ -86,7 +88,8 @@ function getVillageByName(name) {
             return [2 /*return*/, {
                     code: parseInt(village.code),
                     district_code: parseInt(village.district_code),
-                    name: village.name
+                    name: village.name,
+                    postal_code: parseInt(village.postal_code)
                 }];
         });
     });
@@ -97,7 +100,8 @@ function getVillagesOfDistrictCode(districtCode) {
             return [2 /*return*/, villages.filter(function (item) { return parseInt(item.district_code) === districtCode; }).map(function (item) { return ({
                     code: parseInt(item.code),
                     district_code: parseInt(item.district_code),
-                    name: item.name
+                    name: item.name,
+                    postal_code: parseInt(item.postal_code)
                 }); })];
         });
     });
@@ -113,7 +117,8 @@ function getVillagesOfDistrictName(districtName) {
             return [2 /*return*/, villages.filter(function (item) { return parseInt(item.district_code) === parseInt(district.code); }).map(function (item) { return ({
                     code: parseInt(item.code),
                     district_code: parseInt(item.district_code),
-                    name: item.name
+                    name: item.name,
+                    postal_code: parseInt(item.postal_code)
                 }); })];
         });
     });

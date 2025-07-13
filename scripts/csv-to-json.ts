@@ -31,7 +31,7 @@ async function convertCSVtoJSON() {
         } else if (file.csvFile.includes('villages')) {
             jsonArray = await csv({
                 noheader: true,
-                headers: ['code', 'district_code', 'name']
+                headers: ['code', 'district_code', 'name', 'postal_code']
             }).fromFile(path.resolve(file.csvFile));
         }
         

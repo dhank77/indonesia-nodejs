@@ -19,6 +19,7 @@ export interface Village {
     code: number;
     district_code: number;
     name: string;
+    postal_code: number;
 }
 
 export function getAllProvinces(): Promise<Province[]>;

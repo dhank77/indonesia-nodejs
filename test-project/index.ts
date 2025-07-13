@@ -1,26 +1,26 @@
 import {
   // Province functions
   getAllProvinces,
-  getProvinceById,
+  getProvinceByCode,
   getProvinceByName,
   
   // City/Regency functions
   getAllRegencies,
-  getCityById,
+  getCityByCode,
   getCityByName,
   getRegenciesOfProvinceCode,
   getRegenciesOfProvinceName,
   
   // District functions
   getAllDistricts,
-  getDistrictById,
+  getDistrictByCode,
   getDistrictByName,
   getDistrictsOfCityCode,
   getDistrictsOfCityName,
   
   // Village functions
   getAllVillages,
-  getVillageById,
+  getVillageByCode,
   getVillageByName,
   getVillagesOfDistrictCode,
   getVillagesOfDistrictName,
@@ -38,7 +38,7 @@ const TEST_CONFIG = {
   SAMPLE_CITY_CODE: 1101,
   SAMPLE_DISTRICT_CODE: 110101,
   SAMPLE_VILLAGE_CODE: 1101012001,
-  SAMPLE_PROVINCE_NAME: 'DKI Jakarta',
+  SAMPLE_PROVINCE_NAME: 'Jakarta',
   SAMPLE_CITY_NAME: 'Jakarta Pusat',
   SAMPLE_DISTRICT_NAME: 'Bakongan',
   SAMPLE_VILLAGE_NAME: 'Keude Bakongan'
@@ -155,7 +155,7 @@ async function runTests(): Promise<void> {
       
       await testFunction(
         `Get province by ID ${TEST_CONFIG.SAMPLE_PROVINCE_CODE}`,
-        () => getProvinceById(TEST_CONFIG.SAMPLE_PROVINCE_CODE),
+        () => getProvinceByCode(TEST_CONFIG.SAMPLE_PROVINCE_CODE),
         validateProvince
       );
       
@@ -184,7 +184,7 @@ async function runTests(): Promise<void> {
       
       await testFunction(
         `Get city by ID ${TEST_CONFIG.SAMPLE_CITY_CODE}`,
-        () => getCityById(TEST_CONFIG.SAMPLE_CITY_CODE),
+        () => getCityByCode(TEST_CONFIG.SAMPLE_CITY_CODE),
         validateCity
       );
       
@@ -230,7 +230,7 @@ async function runTests(): Promise<void> {
       
       await testFunction(
         `Get district by ID ${TEST_CONFIG.SAMPLE_DISTRICT_CODE}`,
-        () => getDistrictById(TEST_CONFIG.SAMPLE_DISTRICT_CODE),
+        () => getDistrictByCode(TEST_CONFIG.SAMPLE_DISTRICT_CODE),
         validateDistrict
       );
       
@@ -276,7 +276,7 @@ async function runTests(): Promise<void> {
       
       await testFunction(
         `Get village by ID ${TEST_CONFIG.SAMPLE_VILLAGE_CODE}`,
-        () => getVillageById(TEST_CONFIG.SAMPLE_VILLAGE_CODE),
+        () => getVillageByCode(TEST_CONFIG.SAMPLE_VILLAGE_CODE),
         validateVillage
       );
       

@@ -1,3 +1,4 @@
 /node_modules
+/docs
 /test-project/node_modules
 *.tgz

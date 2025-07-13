@@ -212,6 +212,7 @@ interface Village {
   code: number;          // Kode desa/kelurahan (contoh: 3171011001)
   district_code: number; // Kode kecamatan (contoh: 317101)
   name: string;          // Nama desa/kelurahan (contoh: "Gelora")
+  postal_code: number;   // Kode Pos (contoh: 96051)
 }
 ```
 
@@ -349,8 +350,8 @@ Project ini dilisensikan di bawah [MIT License](https://opensource.org/licenses/
 - **Wilayah**  
   - Data wilayah Indonesia 2025 berasal dari [Yonatan Yusak Lestari](https://github.com/yonatanyl) bisa lihat di [repo ini](https://github.com/yonatanyl/KODE-WILAYAH-KEPMENDAGRI-2025) yang bersumber langsung dari Kepmendagri 2025.  
   - Data wilayah Indonesia sebelumnya (< 2025) berasal dari github/api yang saya sudah lupa untuk cantumkan jika merasa itu data anda dengan senang hati kontak saya di [linkedin](https://www.linkedin.com/in/m-hamdani-ilham-latjoro/) atau [email](mailto:d41113512@gmail.com) ataupun buat issue di repo ini.
-- **Kode Pos (Cooming soon)**  
-  > 📨 **Rencana ke depan:** Data **kode pos** akan ditambahkan, insyaAllah, dengan sumber dari [nomor.net](https://nomor.net).
+- **Kode Pos**  
+  - Kodepos.sql datanya dari [w3appdev](https://github.com/w3appdev) bisa lihat di [repo ini](https://github.com/w3appdev/kodepos), dengan sumber utama dari [nomor.net](https://nomor.net).
 
 ---
 
